@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Catalog - Unit 2 Assessment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo right">Home</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="/favorites">Favorites Animals</a></li>
+        <li><a href="/favorites/new">Add</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+	<%- body %>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });</script>
+</body>
+</html>

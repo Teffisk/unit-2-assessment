@@ -1,0 +1,20 @@
+<h1>Favorite Animals</h1>
+<% favorites.forEach(function(f){ %>
+	<div class="animal-display">
+		<div class="animal-details">
+			<% if(f.extinct === true){ %>
+				<h4 class="red-text"><%= f.species_name %></h4>
+			<% } else { %>
+				<h4><%= f.species_name %></h4>
+			<% } %>
+			<h6 class="scientific_name"><i><%= f.scientific_name %></i></h6>
+			<% if(f.extinct === true){ %>
+				<h6>Status: Extinct</h6>
+			<% } else { %>
+				<h6>Status: Extant</h6>
+			<% } %>
+			<p><%= f.description %></p>
+			<img src="<%= f.image_url %>" class="display_image" width="300">
+		</div>
+	</div>
+<% }) %>

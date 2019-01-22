@@ -1,0 +1,17 @@
+.animal-display {
+	border: 3px solid black;
+	border-radius: 3px;
+	margin: 10px;
+}
+
+.animal-details {
+	margin: 10px;
+}
+
+.scientific_name {
+	font-size: 18px;
+}
+
+.red-text {
+	color: red;
+}

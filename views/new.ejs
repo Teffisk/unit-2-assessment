@@ -1,0 +1,26 @@
+<h1>Add a new animal</h1>
+
+<form action="/favorites" method="POST">
+	<label for="species_name">Species</label>
+	<input type="text" name="species_name">
+	<label for="name">Scientific Name</label>
+	<input type="text" name="scientific_name">
+	<label for="image_url">Image Link</label>
+	<input name="image_url" type="text">
+	<label for="description">Description</label>
+	<textarea name="description"></textarea>
+	<label for="extinct">Extinct?</label>
+	<select name="extinct">
+		<option value="" disabled selected>Is it still around?</option>
+		<option value="true">Yes</option>
+		<option value="false">No</option>
+	</select>
+	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    	<i class="material-icons right">send</i>
+  	</button>
+</form>
+
+
+
+
+
